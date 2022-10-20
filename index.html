@@ -1,1 +1,65 @@
 Hello world
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキストにタイトル設定</title>
+    <style>
+        /*これはcssのコメントです*/
+        /*
+        複数行書ける
+        */
+        h1 {
+            font-size: 2.5em;
+            font-family: cursive;
+            color: #ff0000
+        }
+        h2 {
+            font-size: 2.0em;
+            font-family: fantasy;
+            color: rgb(0,255,255)
+        }
+        p {
+            font-size: 1.2em;
+            font-family: sans-serif;
+            color: blue
+        }
+        span {
+            font: bold italic 1.7cm serif;
+            background-color: magenta;
+            color: white;
+        }
+        h3 {
+            /*importantはタグ直書きよりも強い*/
+            font-size: 200%;
+            background-color: black; 
+            color: white !important;
+        }
+        #name{
+            color: black;
+        }
+        h4 {
+            background-color: black;
+        }
+        .shiro {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- これはコメントです -->
+    <h1 id="name">Hello!Hashidume</h1>
+    <h1>abcd</h1>
+    <h2>サンデー</h2>
+    <p>This is <span>Sample</span> content.</p>
+    <!-- 白文字、黒背景でフォント200%で作ってください -->
+    <h3>こんにちは</h3>
+    <h3 style="color: #00ff00; font-size: 300%;">お試し</h3>
+    <h4>1</h4>
+    <h4 class="shiro">2</h4>
+    <h4 class="shiro">3</h4>
+    <h4>4</h4>
+</body>
+</html>
