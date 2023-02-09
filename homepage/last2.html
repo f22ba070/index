@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Print and click</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .mozi {
+            color: red;
+        }
+    </style>
+
+<script>
+    var backflg
+    //windowのunload処理
+    window.onunload =
+     function(){
+        if (backflg != 1){
+            location.replace(document.location);
+        }
+    };  
+    //戻るリンク押下
+    function goback(){
+        backflg = 1;
+        location.href="last2.html"
+    }
+
+    </script>
+
+    <style>
+        .size {
+            height: 130px;
+            width: 150px;
+
+        }
+
+        #size {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .mozi {
+            font-size: 65px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="mozi">あれ？スクロールバーがあると気づいたそこの君。なかなか鋭い目を持っている。<br>
+        最後のミッションはボタンを連打だ！さあ、ゴールまではあと一歩だ！
+    </h1>
+    <h1>
+        Gameover 元のページには戻れないから最初のリンクから始めてね！キーワード[s]
+        
+    </h1>
+
+
+    <!--入力、戻る-->
+    <!--<input type='text' >-->
+    <div id="size">
+    <a href="#" style="color:red" onclick="goback()">連打!!</a>
+    </div>
+</body>
+
+</html>
